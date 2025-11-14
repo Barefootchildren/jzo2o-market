@@ -63,4 +63,6 @@ public interface IActivityService extends IService<Activity> {
      * @return
      */
     List<SeizeCouponInfoResDTO> queryForListFromCache(Integer tabType);
+
+    void deductStock(long activityId);
 }
